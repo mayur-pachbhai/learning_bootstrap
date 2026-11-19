@@ -1,4 +1,9 @@
 .card:hover{
-  background-color: red;
+  background-color: #5f8e02;
+  color: white;
+}
+
+.btn-solid{
+  background-color: #5f8e02;
   color: white;
 }
