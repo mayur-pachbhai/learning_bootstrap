@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css\index.css" />
+    <link rel="stylesheet" href="css\footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css\contact.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar md:navbar-expand bg-success">
+        <div class="container">
+          <a class="navbar-brand" href="#">FarmSathi</a>
+          <button
+            class="btn-icon navbar-toggler"
+            type="button"
+            data-bs-toggle="drawer"
+            data-bs-target="#navbarDrawer"
+            aria-controls="navbarDrawer"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+          </button>
+          <dialog
+            class="drawer drawer-end"
+            tabindex="-1"
+            id="navbarDrawer"
+            aria-labelledby="navbarDrawerLabel"
+          >
+            <div class="drawer-header">
+              <h4 class="drawer-title" id="navbarDrawerLabel">Menu</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="drawer"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="drawer-body mb-2 md:mb-0">
+              <ul class="nav navbar-nav nav-pills me-auto">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active bg-success" href="contact.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </dialog>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+      <section class="mt-6 mb-6">
+        <div class="container">
+          <div class="row">
+            <div class="md:col-6 border border-success border-2 rounded-6 p-6">
+              <form class="row">
+                <div class="md:col-6 mb-6">
+                  <label for="exampleFormControlInput" class="form-label mb-2"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput"
+                    placeholder="Enter Name"
+                  />
+                </div>
+                <div class="md:col-6 mb-6">
+                  <label for="exampleFormControlInput" class="form-label mb-2"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput"
+                    placeholder="name@example.com"
+                  />
+                </div>
+
+                <div class="md:col-6 mb-6">
+                  <label for="exampleFormControlInput" class="form-label mb-2"
+                    >Enter Phone</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="exampleFormControlInput"
+                    placeholder="Enter Phone"
+                  />
+                </div>
+                <div class="md:col-6 mb-6">
+                  <label for="exampleFormControlInput" class="form-label mb-2"
+                    >Enter Adhar</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="exampleFormControlInput"
+                    placeholder="Enter Adhar"
+                  />
+                </div>
+
+                <div class="md:col-4 mb-6">
+                  <div class="form-field">
+                    <label for="exampleFormControlSelect2" class="form-label"
+                      >Select Country</label
+                    >
+                    <select class="form-control" id="exampleFormControlSelect2">
+                      <option>Choose one…</option>
+                      <option value="1">India</option>
+                      <option value="2">UK</option>
+                      <option value="3">US</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="md:col-4 mb-6">
+                  <div class="form-field">
+                    <label for="exampleFormControlSelect2" class="form-label"
+                      >Select State</label
+                    >
+                    <select class="form-control" id="exampleFormControlSelect2">
+                      <option>Choose one…</option>
+                      <option value="1">Maharashtra</option>
+                      <option value="2">Kerala</option>
+                      <option value="3">Rajasthan</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="md:col-4 mb-6">
+                  <div class="form-field">
+                    <label for="exampleFormControlSelect2" class="form-label"
+                      >Select City</label
+                    >
+                    <select class="form-control" id="exampleFormControlSelect2">
+                      <option>Choose one…</option>
+                      <option value="1">Pune</option>
+                      <option value="2">Mumbai</option>
+                      <option value="3">Dharashiv</option>
+                      <option value="3">Kolhapur</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="md:col-6 mb-6">
+                  <label for="datepicker1" class="form-label">DOB</label>
+                  <input
+                    type="text"
+                    class="form-control w-100"
+                    id="datepicker1"
+                    data-bs-toggle="datepicker"
+                    autocomplete="off"
+                    placeholder="Choose date…"
+                  />
+                </div>
+                <div class="md:col-6 mb-6">
+                  <label for="datepicker1" class="form-label">DOJ</label>
+                  <input
+                    type="text"
+                    class="form-control w-100"
+                    id="datepicker1"
+                    data-bs-toggle="datepicker"
+                    autocomplete="off"
+                    placeholder="Choose date…"
+                  />
+                </div>
+
+                <div class="md:col-12 mb-6">
+                  <div class="form-field">
+                    <label for="exampleFormControlTextarea2" class="form-label"
+                      >Enter Message</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea2"
+                      rows="4"
+                    ></textarea>
+                  </div>
+                </div>
+                <button type="submit" class="btn-solid theme-primary">
+                  Submit
+                </button>
+              </form>
+            </div>
+
+            <div class="md:col-6">
+              <h2>Reach Us</h2>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62247.902022039285!2d75.84476618113187!3d18.36108521042539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc508a4d21b6cab%3A0xe7985da23d418bdd!2sPapnash%20Mandir%2C%20Chorakhali.!5e0!3m2!1sen!2sin!4v1795074332412!5m2!1sen!2sin"
+                width="100%"
+                height="550"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="md:col-4 p-6 border-end">
+              <h3>Contact Info</h3>
+              <hr>
+              <h4><i class="fa-solid fa-phone mx-4"></i>2569703697</h4>
+              <h4><i class="fa-solid fa-envelope mx-4"></i>mayur@gmail.com</h4>
+            </div>
+            <div class="md:col-4 p-6 border-end">
+              <h3>Address</h3>
+              <hr>
+              <address class="mx-4">
+                <p><i class="fa-solid fa-location-dot"></i>
+                  BigHaat Agro Pvt Ltd 19/2,
+                  SKR Tower, 15th Cross, 4th Phase,
+                  Dollars Layout, J.P.Nagar, 
+                  Bangalore - 560078 Karnataka India
+                </p>
+              </address>
+            </div>
+            <div class="md:col-4 p-6">
+              <h3>Social Media</h3>
+              <hr>
+              <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube social mx-6"></i></a>
+              <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github social mx-6"></i></a>
+              <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram social mx-6"></i></a>
+              <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin social mx-6"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <section class="mt-8 bg-black fg-white">
+      <div class="container">
+        <div class="row">
+          <div class="md:col-3">
+            <h4 class="p-4">Quick Links</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2 mx-6">
+                <a href="index.html" class="fg-4 text-decoration-none foot-link"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-2 mx-6">
+                <a href="about.html" class="fg-4 text-decoration-none foot-link"
+                  >About</a
+                >
+              </li>
+              <li class="mb-2 mx-6">
+                <a
+                  href="products.html"
+                  class="fg-4 text-decoration-none foot-link"
+                  >Products</a
+                >
+              </li>
+              <li class="mb-2 mx-6">
+                <a
+                  href="services.html"
+                  class="fg-4 text-decoration-none foot-link"
+                  >Services</a
+                >
+              </li>
+              <li class="mb-2 mx-6">
+                <a
+                  href="Contact.html"
+                  class="fg-4 text-decoration-none foot-link"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="md:col-3">
+            <h4 class="p-4">Contact Us</h4>
+            <p class="mb-2 mx-6 fg-4">Email - mayur@gmail.com</p>
+            <p class="mb-2 mx-6 fg-4">Phone - 4561264235</p>
+          </div>
+          <div class="md:col-3">
+            <h4 class="p-4">Office Address</h4>
+            <pre class="fg-4">
+  BigHaat Agro Pvt Ltd
+  19/2, SKR Tower,
+  15th Cross, 4th Phase,
+  Dollars Layout, J.P.Nagar,
+  Bangalore - 560078
+  Karnataka India
+            </pre>
+          </div>
+          <div class="md:col-3">
+            <h4 class="p-4">Social Media</h4>
+            <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube foot-social mx-4"></i></a>
+            <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github foot-social mx-4"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram foot-social mx-4"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin foot-social mx-4"></i></a>
+          </div>
+          <p class="text-center">
+            Copyright <i class="fa-regular fa-copyright"></i> 2026 All rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

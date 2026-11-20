@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css\footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css\products.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar md:navbar-expand bg-success">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">FarmSathi</a>
+          <button
+            class="btn-icon navbar-toggler"
+            type="button"
+            data-bs-toggle="drawer"
+            data-bs-target="#navbarDrawer"
+            aria-controls="navbarDrawer"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+          </button>
+          <dialog
+            class="drawer drawer-end"
+            tabindex="-1"
+            id="navbarDrawer"
+            aria-labelledby="navbarDrawerLabel"
+          >
+            <div class="drawer-header">
+              <h5 class="drawer-title" id="navbarDrawerLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="drawer"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="drawer-body mb-2 md:mb-0">
+              <ul class="nav navbar-nav nav-pills me-auto">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active bg-success" href="products.html"
+                    >Products</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </dialog>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+
+    <section class="mt-8 mb-6 bg-black">
+      <div class="container">
+        <div class="row">
+          <h1 class="p-6 fg-white">Our Products</h1>
+          <div class="md:col-3 pb-6">
+            <div class="card">
+              <div class="card-body">
+                <img src="images/tomato.jpg" class="card-img" alt="..." />
+                <h5 class="mt-2 mb-0">Tomato</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the cards content.
+                </p>
+                <button
+                  type="button"
+                  class="btn-solid bg-success"
+                  data-bs-toggle="dialog"
+                  data-bs-target="#Tomato"
+                >
+                  Open dialog
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="md:col-3">
+            <div class="card">
+              <div class="card-body">
+                <img src="images/cotton.jpg" class="card-img" alt="..." />
+                <h5 class="mt-2 mb-0">Cotton</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the cards content.
+                </p>
+                <button
+                  type="button"
+                  class="btn-solid bg-success"
+                  data-bs-toggle="dialog"
+                  data-bs-target="#Cotton"
+                >
+                  Open dialog
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="md:col-3">
+            <div class="card">
+              <div class="card-body">
+                <img src="images/corn.webp" class="card-img" alt="..." />
+                <h5 class="mt-2 mb-0">Corn</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the cards content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="md:col-3">
+            <div class="card">
+              <div class="card-body">
+                <img src="images/farm_image_5.jpg" class="card-img" alt="..." />
+                <h5 class="mt-2 mb-0">Farm</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the cards content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <section class="mt-8 bg-black fg-white">
+      <div class="container">
+        <div class="row">
+          <div class="md:col-3">
+            <h4 class="p-4">Quick Links</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2 mx-6">
+                <a href="index.html" class="fg-4 text-decoration-none foot-link"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-2 mx-6">
+                <a href="about.html" class="fg-4 text-decoration-none foot-link"
+                  >About</a
+                >
+              </li>
+              <li class="mb-2 mx-6">
+                <a
+                  href="products.html"
+                  class="fg-4 text-decoration-none foot-link"
+                  >Products</a
+                >
+              </li>
+              <li class="mb-2 mx-6">
+                <a
+                  href="services.html"
+                  class="fg-4 text-decoration-none foot-link"
+                  >Services</a
+                >
+              </li>
+              <li class="mb-2 mx-6">
+                <a
+                  href="Contact.html"
+                  class="fg-4 text-decoration-none foot-link"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="md:col-3">
+            <h4 class="p-4">Contact Us</h4>
+            <p class="mb-2 mx-6 fg-4">Email - mayur@gmail.com</p>
+            <p class="mb-2 mx-6 fg-4">Phone - 4561264235</p>
+          </div>
+          <div class="md:col-3">
+            <h4 class="p-4">Office Address</h4>
+            <pre class="fg-4">
+  BigHaat Agro Pvt Ltd
+  19/2, SKR Tower,
+  15th Cross, 4th Phase,
+  Dollars Layout, J.P.Nagar,
+  Bangalore - 560078
+  Karnataka India
+            </pre>
+          </div>
+          <div class="md:col-3">
+            <h4 class="p-4">Social Media</h4>
+            <a href="https://youtube.com" target="_blank"
+              ><i class="fa-brands fa-youtube foot-social mx-4"></i
+            ></a>
+            <a href="https://github.com/" target="_blank"
+              ><i class="fa-brands fa-github foot-social mx-4"></i
+            ></a>
+            <a href="https://instagram.com" target="_blank"
+              ><i class="fa-brands fa-instagram foot-social mx-4"></i
+            ></a>
+            <a href="https://linkedin.com" target="_blank"
+              ><i class="fa-brands fa-linkedin foot-social mx-4"></i
+            ></a>
+          </div>
+          <p class="text-center">
+            Copyright <i class="fa-regular fa-copyright"></i> 2026 All rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <dialog class="dialog dialog-scrollable dialog-xl" id="Tomato">
+      <div class="dialog-header">
+        <h1 class="dialog-title">Tomato</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="dialog"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="dialog-body">
+        <div class="container">
+          <div class="row">
+            <div class="md:col-6">
+              <img src="images/tomato.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="md:col-6">
+              <p>
+                Tomato is one of the most popular vegetables grown around the
+                world. It is widely used in cooking, salads, sauces, soups, and
+                juices. Tomato is botanically a fruit, but it is commonly
+                considered a vegetable because of its culinary uses. It is rich
+                in vitamins, minerals, and antioxidants. Tomato is one of the
+                most popular vegetables grown around the world. It is widely
+                used in cooking, salads, sauces, soups, and juices. Tomato is
+                botanically a fruit, but it is commonly considered a vegetable
+                because of its culinary uses. It is rich in vitamins, minerals,
+                and antioxidants. Tomato is one of the most popular vegetables
+                grown around the world. It is widely used in cooking, salads,
+                sauces, soups, and juices. Tomato is botanically a fruit, but it
+                is commonly considered a vegetable because of its culinary uses.
+                It is rich in vitamins, minerals, and antioxidants.
+              </p>
+            </div>
+
+            <div class="md:col-4">
+              <img src="images/tomato.jpg" alt="" class="img-fluid mt-6">
+            </div>
+            <div class="md:col-4">
+              <img src="images/tomato.jpg" alt="" class="img-fluid mt-6">
+            </div>
+            <div class="md:col-4">
+              <img src="images/tomato.jpg" alt="" class="img-fluid mt-6">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dialog-footer">
+        <button
+          type="button"
+          class="btn-solid theme-secondary"
+          data-bs-dismiss="dialog"
+        >
+          Close
+        </button>
+      </div>
+    </dialog>
+
+     <dialog class="dialog dialog-scrollable dialog-xl" id="Cotton">
+      <div class="dialog-header">
+        <h1 class="dialog-title">Cotton</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="dialog"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="dialog-body">
+        <div class="container">
+          <div class="row">
+            <div class="md:col-6">
+              <img src="images/cotton.jpg" alt="" class="img-fluid" />
+            </div>
+            <div class="md:col-6">
+              <p>
+                Tomato is one of the most popular vegetables grown around the
+                world. It is widely used in cooking, salads, sauces, soups, and
+                juices. Tomato is botanically a fruit, but it is commonly
+                considered a vegetable because of its culinary uses. It is rich
+                in vitamins, minerals, and antioxidants. Tomato is one of the
+                most popular vegetables grown around the world. It is widely
+                used in cooking, salads, sauces, soups, and juices. Tomato is
+                botanically a fruit, but it is commonly considered a vegetable
+                because of its culinary uses. It is rich in vitamins, minerals,
+                and antioxidants. Tomato is one of the most popular vegetables
+                grown around the world. It is widely used in cooking, salads,
+                sauces, soups, and juices. Tomato is botanically a fruit, but it
+                is commonly considered a vegetable because of its culinary uses.
+                It is rich in vitamins, minerals, and antioxidants.
+              </p>
+            </div>
+
+            <div class="md:col-4">
+              <img src="images/cotton.jpg" alt="" class="img-fluid mt-6">
+            </div>
+            <div class="md:col-4">
+              <img src="images/cotton.jpg" alt="" class="img-fluid mt-6">
+            </div>
+            <div class="md:col-4">
+              <img src="images/cotton.jpg" alt="" class="img-fluid mt-6">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dialog-footer">
+        <button
+          type="button"
+          class="btn-solid theme-secondary"
+          data-bs-dismiss="dialog"
+        >
+          Close
+        </button>
+      </div>
+    </dialog>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

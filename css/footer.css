@@ -1,3 +1,23 @@
 .foot-link:hover{
   color: white;
 }
+
+.foot-social.fa-github{
+  color:white;
+}
+
+.foot-social{
+  font-size: 30px;
+}
+
+.fa-youtube{
+  color: red;
+}
+
+.fa-instagram{
+  color: #f70d48;
+}
+
+.fa-linkedin{
+  color: #007ab5;
+}
